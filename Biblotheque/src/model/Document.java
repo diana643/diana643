@@ -31,7 +31,7 @@ public abstract class Document {
 
 	@Override
 	public String toString() {
-		return numEnreg + ", " + titre ;
+		return numEnreg + " , " + titre ;
 	}
 	
 	

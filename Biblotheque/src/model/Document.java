@@ -3,15 +3,13 @@ package model;
 // TO DO ...
 public abstract class Document {
 	
-	private int numEnreg;
+	private int numEnreg = 0;
 	private String titre;
 	
-	public Document(int numEnreg, String titre) {
-		this.numEnreg = numEnreg;
+	public Document(String titre){
 		this.titre = titre;
+		numEnreg += 1;
 	}
-	
-
 	public int getNumEnreg() {
 		return numEnreg;
 	}
@@ -33,9 +31,4 @@ public abstract class Document {
 	public String toString() {
 		return numEnreg + " , " + titre ;
 	}
-	
-	
-
-	
-	
 }

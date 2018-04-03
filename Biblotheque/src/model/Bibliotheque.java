@@ -30,9 +30,17 @@ public class Bibliotheque {
 	 */
 	public Document getDocument(int i) {
 		// TO DO ...
-		throw new RuntimeException("getDocument() not yet implemented"); 
+		Document doc = null;
+		try{
+			doc = documents.get(i);
+			throw new RuntimeException("getDocument() not yet implemented");	
+		}catch(RuntimeException e){
+			System.out.println(e.getMessage());
+		}
+		return doc;
 	}
-	
+
+
 	/**
 	 * Si doc est non null et n'appartient pas déjà à la liste des documents,
 	 * alors ajoute doc à cette liste et renvoie true ;
@@ -40,7 +48,17 @@ public class Bibliotheque {
 	 */
 	public boolean addDocument(Document doc) {
 		// TO DO ...
-		throw new RuntimeException("addDocument() not yet implemented"); 
+		boolean bool;
+		try{
+			documents.add(doc);
+			bool = true;
+			throw new RuntimeException("addDocument() not yet implemented");
+			
+		}catch(RuntimeException e){
+			System.out.println(e.getMessage());
+			bool = false;
+		}
+		return bool;
 	}
 	
 	/**
@@ -49,7 +67,17 @@ public class Bibliotheque {
 	 */
 	public boolean removeDocument(Document doc) {
 		// TO DO ...
-		throw new RuntimeException("removeDocument() not yet implemented"); 
+		boolean bool;
+		try{
+			documents.remove(doc);
+			bool = true;
+			throw new RuntimeException("removeDocument() not yet implemented"); 
+		}catch(RuntimeException e){
+			System.out.println(e.getMessage());
+			bool = false;
+		}
+		return bool;
+	
 	}
 
 	@Override

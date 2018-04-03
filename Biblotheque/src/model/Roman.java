@@ -3,10 +3,12 @@ package model;
 // TO DO ...
 public class Roman extends Livre {
 
+	public static final int GONCOURT = 10;
+	public static final int MEDICIS = 20;
 	private int prixLitteraire;
 
-	public Roman(int numEnreg, String titre, String auteur, int nbPages, int prixLitteraire) {
-		super(numEnreg, titre, auteur, nbPages);
+	public Roman(String titre, String auteur, int nbPages, int prixLitteraire) {
+		super(titre, auteur, nbPages);
 		this.prixLitteraire = prixLitteraire;
 	}
 

@@ -6,8 +6,8 @@ public class Livre extends Document implements InterfaceAuteur{
 	private String auteur;
 	private int nbPages;
 	
-	public Livre(int numEnreg, String titre, String auteur, int nbPages) {
-		super(numEnreg, titre);
+	public Livre(String titre, String auteur, int nbPages) {
+		super(titre);
 		this.auteur = auteur;
 		this.nbPages = nbPages;
 	}

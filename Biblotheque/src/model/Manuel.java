@@ -5,8 +5,8 @@ public class Manuel extends Livre{
 
 	private int niveau;
 
-	public Manuel(int numEnreg, String titre, String auteur, int nbPages, int niveau) {
-		super(numEnreg, titre, auteur, nbPages);
+	public Manuel(String titre, String auteur, int nbPages, int niveau) {
+		super(titre, auteur, nbPages);
 		this.niveau = niveau;
 	}
 
